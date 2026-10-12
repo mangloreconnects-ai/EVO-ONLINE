@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EVO ONLINE helps brands grow through creative design, video production and digital marketing.">
+  <title>EVO ONLINE | Your Digital Partner</title>
+  <style>
+    :root {
+      --red: #b8242e;
+      --cream: #eedcc6;
+      --black: #171717;
+      --muted: #b9b2ad;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #171717f5;
+      border-bottom: 1px solid #ffffff16;
+    }
+    nav {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .logo { font-size: 25px; font-weight: 900; letter-spacing: 2px; }
+    .logo span { color: var(--red); }
+    .nav-links { display: flex; gap: 23px; flex-wrap: wrap; }
+    .nav-links a { font-size: 13px; color: var(--cream); }
+    .nav-links a:hover { color: #ff5963; }
+    .hero {
+      min-height: 570px; display: flex; align-items: center;
+      background:
+        linear-gradient(90deg, #171717 8%, #171717ed 48%, #17171770),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+    .hero-content { max-width: 760px; padding: 90px 0; }
+    .eyebrow {
+      color: #ff5963; text-transform: uppercase; letter-spacing: 4px;
+      font-size: 12px; font-weight: bold;
+    }
+    h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.05; margin: 22px 0; }
+    h1 span, .accent { color: var(--red); }
+    .hero p, .intro { color: var(--muted); max-width: 650px; }
+    .button {
+      display: inline-block; background: var(--red); color: white;
+      padding: 13px 24px; border-radius: 4px; margin-top: 25px;
+      font-size: 13px; font-weight: bold;
+    }
+    .button:hover { background: #d43742; }
+    section { padding: 85px 0; scroll-margin-top: 75px; }
+    .section-heading { font-size: clamp(30px, 4vw, 44px); line-height: 1.2; margin: 12px 0 18px; }
+    .intro { margin-bottom: 35px; }
+    .cream-section { background: var(--cream); color: var(--black); }
+    .cream-section .intro { color: #5c5149; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+      margin-top: 35px;
+    }
+    .service-card {
+      padding: 28px; border: 1px solid #ffffff20;
+      background: #202020; border-radius: 8px;
+    }
+    .cream-section .service-card { background: #f8eddf; border-color: #d9c4ad; }
+    .number { font-size: 13px; font-weight: bold; color: var(--red); }
+    .service-card h3 { margin: 12px 0 8px; font-size: 20px; }
+    .service-card p { font-size: 14px; color: var(--muted); }
+    .cream-section .service-card p { color: #65584f; }
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+      margin-top: 30px;
+    }
+    .portfolio-item {
+      min-height: 190px; padding: 25px; display: flex;
+      flex-direction: column; justify-content: flex-end;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #482027, #252020 75%);
+      border: 1px solid #ffffff16;
+    }
+    .portfolio-item:nth-child(2) { background: linear-gradient(145deg, #54412d, #24201d 75%); }
+    .portfolio-item:nth-child(3) { background: linear-gradient(145deg, #292c45, #202020 75%); }
+    .portfolio-item p { color: var(--muted); font-size: 13px; }
+    .contact-box {
+      background: #221d1d; padding: 40px; border-left: 4px solid var(--red);
+      border-radius: 6px;
+    }
+    footer { padding: 28px 0; border-top: 1px solid #ffffff20; color: var(--muted); font-size: 13px; }
+    footer .container { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 14px; }
+      .hero { min-height: 500px; }
+      .services-grid, .portfolio-grid { grid-template-columns: 1fr; }
+      section { padding: 60px 0; }
+      .contact-box { padding: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">EVO <span>ONLINE.</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">Welcome to EVO ONLINE</p>
+        <h1>YOUR BRAND.<br>OUR <span>DIGITAL MAGIC.</span></h1>
+        <p>Creative ideas. Powerful digital growth. We help businesses stand out through design, video, social media and smart marketing.</p>
+        <a class="button" href="#services">EXPLORE OUR SERVICES ↗</a>
+      </div>
+    </section>
+
+    <section class="cream-section" id="services">
+      <div class="container">
+        <p class="eyebrow">What we do</p>
+        <h2 class="section-heading">CREATIVE IDEAS.<br>POWERFUL DIGITAL GROWTH.</h2>
+        <p class="intro">At EVO ONLINE, creativity meets strategy. We help businesses build their brand, connect with their audience and grow their digital presence.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="number">01 / DESIGN</span>
+            <h3>Graphic Design</h3>
+            <p>Eye-catching social media posts, promotional graphics, brand visuals and marketing materials.</p>
+          </article>
+          <article class="service-card">
+            <span class="number">02 / VIDEO</span>
+            <h3>Video Production</h3>
+            <p>Engaging Reels, promotional videos and creative edits that bring your brand story to life.</p>
+          </article>
+          <article class="service-card">
+            <span class="number">03 / SOCIAL</span>
+            <h3>Social Media Management</h3>
+            <p>Content planning, post creation and scheduling to keep your brand active and consistent.</p>
+          </article>
+          <article class="service-card">
+            <span class="number">04 / STRATEGY</span>
+            <h3>Social Media Marketing</h3>
+            <p>Creative content strategies that build awareness, engagement and connections with your audience.</p>
+          </article>
+          <article class="service-card">
+            <span class="number">05 / META ADS</span>
+            <h3>Facebook & Instagram Ads</h3>
+            <p>Targeted ad campaigns designed to help your business reach potential customers.</p>
+          </article>
+          <article class="service-card">
+            <span class="number">06 / GOOGLE ADS</span>
+            <h3>Google Ads</h3>
+            <p>Help customers discover your products and services when they search online.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <p class="eyebrow">Our creative work</p>
+        <h2 class="section-heading">A LITTLE LOOK AT<br>WHAT WE CREATE.</h2>
+        <p class="intro">Explore the creative possibilities. Add your own designs, videos and campaign examples here as your portfolio grows.</p>
+        <div class="portfolio-grid">
+          <article class="portfolio-item">
+            <span class="number">01</span>
+            <h3>Graphic Design</h3>
+            <p>Social posts · Brand visuals</p>
+          </article>
+          <article class="portfolio-item">
+            <span class="number">02</span>
+            <h3>Video Production</h3>
+            <p>Reels · Promotional videos</p>
+          </article>
+          <article class="portfolio-item">
+            <span class="number">03</span>
+            <h3>Social Media Content</h3>
+            <p>Creative campaigns · Content ideas</p>
+          </article>
+        </div>
+        <p class="intro" style="margin-top:20px">Tip: If these are practice projects, identify them as sample work rather than client projects.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="cream-section">
+      <div class="container">
+        <p class="eyebrow">Let's talk</p>
+        <div class="contact-box">
+          <h2 class="section-heading">LET'S CREATE SOMETHING GREAT TOGETHER.</h2>
+          <p class="intro">Have a business idea or a project in mind? Let's talk about how EVO ONLINE can help your brand grow.</p>
+          <p><strong>Instagram:</strong> Add your Instagram profile link</p>
+          <p><strong>Email:</strong> Add your business email address</p>
+          <p><strong>WhatsApp:</strong> Add your business WhatsApp link</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 EVO ONLINE. All rights reserved.</span>
+      <span>Your vision. Our creativity. One digital partner.</span>
+    </div>
+  </footer>
+</body>
+</html>
